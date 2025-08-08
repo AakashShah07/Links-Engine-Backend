@@ -15,7 +15,7 @@ app.use("/api/auth", require("./route/auth"));
 app.use("/api/posts", require("./route/posts"));
 app.use("/api/users", require("./route/users"));
 
-// Start Server
+// Start Server with npm run dev
 mongoose.connect(process.env.MONGO_URI)
   .then(() => {
     app.listen(process.env.PORT, () => {
